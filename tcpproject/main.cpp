@@ -11,6 +11,7 @@ int main() {
 		std::cerr << "Server error: " << e.what() << "\n";
 		return 1;
 	}
-
+	
+	WSACleanup();
 	return 0;
 }
