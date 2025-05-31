@@ -12,13 +12,13 @@ Server::Server(const std::string& ip, int port)
     }
 }
 
-// Destructor to clean up resources
+// destructor to clean up resources
 Server::~Server() {
     stop();
     WSACleanup();
 }
 
-// Initialize Winsock
+// initialize Winsock
 void Server::initializeWinsock() {
     int result = WSAStartup(MAKEWORD(2, 2), &wsaData_);
     if (result != 0) {
@@ -38,11 +38,12 @@ void Server::createSocket() {
 
 //start server recive IP and PORT 
 bool Server::start() {
+    
     std::cout << "PORT: ";
     std::cin >> port_;
 	std::cout << "IP: ";
 	std::cin >> ip_;
-
+    
 	sockaddr_in serverAddr;
 	serverAddr.sin_family = AF_INET;
 	serverAddr.sin_port = htons(port_);

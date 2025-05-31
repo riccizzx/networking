@@ -19,7 +19,7 @@
     <Filter Include="server">
       <UniqueIdentifier>{4a527f09-db6a-43e3-a444-cfb14cbd81e5}</UniqueIdentifier>
     </Filter>
-    <Filter Include="common">
+    <Filter Include="main">
       <UniqueIdentifier>{38a90b0c-c96f-4ddc-9053-56381c09517e}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -30,11 +30,8 @@
     <ClCompile Include="networkingServer.cpp">
       <Filter>server</Filter>
     </ClCompile>
-    <ClCompile Include="common.cpp">
-      <Filter>common</Filter>
-    </ClCompile>
     <ClCompile Include="main.cpp">
-      <Filter>server</Filter>
+      <Filter>main</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
