@@ -39,10 +39,10 @@ void Server::createSocket() {
 //start server recive IP and PORT 
 bool Server::start() {
     
-    std::cout << "PORT: ";
+    std::cout << "IP: " << ip_;
+    std::cin >> ip_;
+    std::cout << "PORT: " << port_;
     std::cin >> port_;
-	std::cout << "IP: ";
-	std::cin >> ip_;
     
 	sockaddr_in serverAddr;
 	serverAddr.sin_family = AF_INET;
